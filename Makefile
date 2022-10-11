@@ -1,3 +1,3 @@
 build:
 	docker buildx create --use
-	docker buildx build --build-arg VERSION=v3.8.2 --platform linux/arm/v7,linux/arm64/v8,linux/386,linux/amd64 -t helm .
+	docker buildx build --push --build-arg VERSION=v3.10.0 --platform linux/arm64/v8,linux/amd64 -t jiramot/helm-cli:v3.10.0 .

@@ -4,7 +4,7 @@ ARG TARGETOS
 ARG TARGETARCH
 ARG VERSION
 
-ENV VERSION="${VERSION:-v3.9.0-rc.1}"
+ENV VERSION="${VERSION:-v3.10.0}"
 ENV DOWNLOAD_URL="https://get.helm.sh/helm-${VERSION}-${TARGETOS}-${TARGETARCH}.tar.gz"
 RUN apk add --update --no-cache wget git bash curl yq && \
     wget ${DOWNLOAD_URL} -O - | tar -xz && \
